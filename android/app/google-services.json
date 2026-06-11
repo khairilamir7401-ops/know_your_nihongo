@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "641519756930",
+    "project_id": "knowyournihongoapp",
+    "storage_bucket": "knowyournihongoapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641519756930:android:1979e45105dff5cd85b69b",
+        "android_client_info": {
+          "package_name": "com.mycompany.knowyournihongoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6w5NViBfWXt3C1ezc9O_yRSTNENhqSMg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
