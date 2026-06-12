@@ -3,8 +3,10 @@ on: [push]
 jobs:
   build:
     runs-on: macos-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # ✅ forces Node.js 24 for all actions
     steps:
-      - uses: actions/checkout@v4          # ✅ upgraded from v3 → fixes the warning
+      - uses: actions/checkout@v4
 
       - uses: subosito/flutter-action@v2
         with:
@@ -14,7 +16,6 @@ jobs:
 
       - run: flutter build ios --release --no-codesign
 
-      # Package the unsigned .app into an .ipa manually
       - name: Package IPA
         run: |
           mkdir -p Payload
